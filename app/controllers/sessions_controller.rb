@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
-  before_action :require_login
-  skip_before_action :require_login, only: [:index]
+  skip_before_action :require_login
 
   def new
   end
